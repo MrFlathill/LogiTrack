@@ -1,0 +1,22 @@
+INSERT INTO `companys` (`cid`, `cname`, `caddress`, `ctelephone`, `cmail`) VALUES (NULL, 'GLS Srl', 'Via sole 111', '129874234', 'hhhhh@hhhhhh.com');
+INSERT INTO `companys` (`cid`, `cname`, `caddress`, `ctelephone`, `cmail`) VALUES (NULL, 'Mitico Srl', 'Via xyz 41', '180723457', 'awdij@iamwd.com');
+INSERT INTO `companys` (`cid`, `cname`, `caddress`, `ctelephone`, `cmail`) VALUES (NULL, 'Discordia AD', 'Via awdad 13', '108723423', 'dddd@dddd.com');
+
+{
+    "cname": "Cagare AG",
+    "caddress": "Via gggdnsv 135",
+    "ctelephone": "1233465823",
+    "cmail": "awdbdtb@awdsfbn.com"
+}
+
+INSERT INTO `images` (`iid`, `iblob`, `itimestamp`, `ilat`, `ilong`) VALUES (NULL, 'base64 image code', '1699688305', '45.89346', '89.96284');
+INSERT INTO `images` (`iid`, `iblob`, `itimestamp`, `ilat`, `ilong`) VALUES (NULL, 'base64 image code', '1699688306', '45.64281', '89.91560');
+INSERT INTO `images` (`iid`, `iblob`, `itimestamp`, `ilat`, `ilong`) VALUES (NULL, 'base64 image code', '1699688307', '45.12331', '89.34525');
+
+{
+  "iid": 12,
+  "iblob": "base64 image code",
+  "itimestamp": 1699688305,
+  "ilat": 45.89346,
+  "ilong": 89.96284
+}

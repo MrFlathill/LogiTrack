@@ -1,5 +1,7 @@
 # Database
 
+Hosting of the Database will be done in Docker Containers to isolate the Database and giving attackers less attack-surface. This secures and hardens the Heart of the Project.
+
 ## Structure
 
 - company(c_id, c_name, c_address, c_telephone, c_mail)
