@@ -1,0 +1,362 @@
+ACMAT
+AEC
+AIL
+Albion
+Alfa Romeo
+American Coleman
+American LaFrance
+Amico
+Argyle
+Armstrong-Saurer
+Arna
+Arya
+Ashok Leyland
+Asia MotorWorks (AMW)
+Askam
+Astra
+Atkinson
+ATP Trucks
+Austin
+Autocar Company
+Automiesse
+Available
+Avia Trucks
+Avtomobilnoe Moskovskoe Obshchestvo
+AWD
+BAE Systems
+Bailey
+Barkas
+Baron
+Barreiros
+BAW
+Bean
+Beardmore
+Bedford
+Beiben
+BelAZ
+Belsize Motors
+Bering Trucks
+Berliet
+Berliet-Tramagal
+Berna
+BMC
+Borgward
+Bravia SARL
+Bristol UD Trucks/Isuzu Motors/Mitsubishi Fuso Truck And Bus Corporation/Hino Motors Joint Venture 100%
+British Motor Corporation
+Brockway
+Brossel
+Brown
+Bruce-SN
+Bucegi
+Büssing
+BYD Company
+Caledon
+Canadian Car Corporation
+Carmichael
+Chavdar
+Chenard-Walcker
+Chengli Special Automobile
+Chery
+Chevrolet
+Chingkangshan
+CHTC
+Citroën
+Cline
+CNHTC
+Colet
+Commer
+Corbitt
+Crane Carrier Corporation
+Crossley
+Csepel
+DAC Trucks
+Daewoo
+DAF Trucks
+Daihatsu
+Daimler AG
+Daimler India (BharatBenz)
+Dand
+Dart
+De Dion-Bouton
+Delahaye
+Dennis Eagle
+Dennis-Mann Egerton
+Dennison
+Dennis UD Trucks/Isuzu Motors/Mitsubishi Fuso Truck And Bus Corporation/Hino Motors Joint Venture 100%
+DeSoto
+Diamond T
+Dina (Mexico)
+Dodge
+Dongfeng Liuzhou Motor
+Dongfeng Motor Corporation – Nissan Diesel/Cummins joint venture
+Douglas
+Ebro
+Eicher Motors
+ELM Trucking
+ELVO
+E-One
+ERF
+Fageol
+FAP
+Fargo
+FAR Trucks
+FAW
+FBW
+Federal
+Fiat
+Flextruc
+Foden
+Force Motors
+Ford
+Ford Trucks
+Foton
+Fowler
+Freeman
+Freightliner Trucks
+FTF Trucks
+FWD Auto Company
+GA
+GA (Azerbaijan) - 45% subsidiary of Tata Motors
+Ganja Auto Plant
+Garner
+Garrett
+Gaz
+General Motors Canada
+General Vehicle
+Genoto
+Gersix
+Ghandhara Industries
+Gilford
+Ginaf
+GMC
+Gotfredson
+Gräf & Stift
+Greenkraft Inc
+Grube
+Guy
+GV
+Halley
+Hallford
+Hanomag
+Hardy
+Haulamatic
+Hayes Truck
+Hendrickson
+Henschel
+HEPCO
+HHT
+HICOM
+Hindustan Motors
+Hino
+Hino Motors
+Hinopak Motors
+Hispano-Suiza
+HME
+Hohan
+Horch
+Hotchkiss
+HSG
+Hualing Xingma Automobile
+Hug
+Hyundai
+Ibex
+IFA
+Isuzu
+Iveco
+Jarrett
+Jeffedry Quad
+Jelcz
+Jensen
+Jianghuai Automobile
+Jiangling Motors
+Jiaotong
+Jiefang
+Kaelble
+Kalma
+Kalmar Industries
+Kamaz
+Karrier
+Kaveh
+KAZ
+Kenworth
+Kerr Stuart
+KMC
+Knox
+Komatsu
+KrAZ
+Kromhout
+Labourier
+Lacre
+Lancia
+Latil
+LAZ
+Leyland
+Leyland DAF
+LIAZ
+Liberty
+Loheac 
+Lomount
+Lorraine-Dietrich
+Lovol Heavy Industry
+Mack Trucks
+Madara
+Magirus
+Mahendra Motor European
+Mahindra Truck and Bus Division
+MAN
+Manchester
+Mann
+MAN Truck & Bus (left in 2018[2])
+Marmon
+Marmon-Herrington
+Master Motors
+Matra Fire
+Maudslay
+MAZ
+McCurd
+Mercedes-Benz
+Minerva
+Minsei
+Mitsubishi Fuso
+Mitsubishi Motors SA
+Moreland
+Morris
+Morris Commercial
+Motor Traction
+Mowag
+MTZ
+Multicar
+Multiwheeler
+MZKT
+Namco
+Navistar International
+Neobus
+Nibus
+Nicolas
+Nikola
+Nissan
+Nissian
+Norde
+ÖAF
+Officine Meccaniche
+Officine Meccaniche Tortonesi
+Opel
+Orange EV
+Oshkosh
+Otokar
+Paccar
+Pagefield
+Panhard
+Paul Nutzfahrzeuge
+Paymaster
+Pegaso
+Persika
+Peterbilt
+Peugeot
+Pierce
+Praga
+Premier Automobiles
+Preslav
+Proctor
+Qingling
+Quest
+Raba
+Ramirez
+Rapid
+Relay
+Renault Trucks
+Reo
+Republic
+Riker
+Robur
+Roman
+Rotinoff
+Rowe-Hillmaster
+Rutland
+Sany
+Saurer
+Saviem
+Scammell
+Scania
+Scot
+SD
+Seddon
+Seddon Atkinson
+Sentinel
+Shaanxi Automobile Group
+Shacman
+Shefflex
+Sides
+Simca
+Sinotruk
+Sisu Auto
+Sitom
+Sitrak
+Škoda
+SML Isuzu Limited (SMLI)
+Somua
+Spangler
+Spartan
+Star
+Sterling Trucks
+Stewart & Stevenson
+Steyr
+Straker-Squire
+Straussler
+Studebaker
+Tadano Faun GmbH
+TAM
+Tangjun Ou Ling
+Tata Daewoo
+Tata Motors
+Tata Motors Japan
+Tata Motor UK
+Tatra
+Temax
+Terberg
+Tesla Motors
+Texmaco
+Thames
+Thornycroft
+Tilling Stevens
+Titan
+Tonar
+Traffic
+TVM
+TVS
+TVS Motar France
+TVW
+UD Trucks
+Unic
+Unimog
+Union
+Unipower
+Ural
+URO
+USG-Pitt
+Vanaja
+Vehicle Factory Jabalpur
+Verheul
+Vinaxuki
+Volkswagen Commercial Vehicles
+Volvo
+Volvo Trucks
+Vomag
+Vulcan
+Walter
+Western Star Trucks
+White
+Willème
+XCMG
+Xiaolong Automotive Technologies Co., Ltd
+Yarovit
+Yorkshire
+YTO
+Yuejin
+Zastava TERVO
+Zastava Trucks
+Zeligson
+ZiL
+Ziyang Nanjun
+Zwicky
