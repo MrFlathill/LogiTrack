@@ -1,0 +1,290 @@
+swagger: "2.0"
+info:
+  description: "Documentaion of the official LogiTrack API with all his Endpoints"
+  version: "1.0.0"
+  title: "LogiTrack API"
+  license:
+    name: "MIT"
+    url: "https://opensource.org/licenses/MIT"
+
+host: "localhost:8090"
+basePath: "/api/v1"
+
+tags:
+- name: "companys"
+  description: "Everything to set and work with Companys"
+- name: "images"
+  description: "Everything to set and work with Images"
+- name: "typedata"
+  description: "Everything to set and work with TypeData"
+
+schemes:
+- "http"
+
+paths:
+  /companys:
+    get:
+      tags:
+      - "companys"
+      summary: "Returns all existing companys"
+      produces:
+      - "application/json"
+      - "application/xml"
+      responses:
+        '200':
+          description: "successful operation"
+          schema:
+            $ref: '#/definitions/CompanyArray'
+        '400':
+          description: "Bad request"
+        '500':
+          description: "Database error"
+
+    post:
+      tags:
+      - "companys"
+      summary: "Creates a new company"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Company Object to be added"
+        required: true
+        schema:
+          $ref: "#/definitions/Company"
+      responses:
+        '201':
+          description: "Created"
+        '400':
+          description: "Bad request"
+        '500':
+          description: "Database error"
+
+    put:
+      tags:
+        - "companys"
+      summary: "Updates an existing company"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Company Object to be changed"
+        required: true
+        schema:
+          $ref: "#/definitions/Company"
+      responses:
+        '200':
+          description: "successfully updated"
+        '400':
+          description: "Bad request"
+        '500':
+          description: "Database error"
+
+  /companys/{bid}:
+    get:
+      tags:
+      - "companys"
+      summary: "Gets a specific company"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "cid"
+        in: "path"
+        description: "ID od the Company to be returned"
+        required: true
+        type: "integer"
+      responses:
+        '200':
+          description: "successful operation"
+          schema:
+            $ref: '#/definitions/Company'
+        '400':
+          description: "Bad request"
+        '500':
+          description: "Database error"
+    
+    delete:
+      tags:
+        - "companys"
+      summary: "Deletes a specific company"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "cid"
+        in: "path"
+        description: "ID of the company to be deleted"
+        required: true
+        type: "integer"
+      responses:
+        '204':
+          description: "successful operation"
+        '400':
+          description: "Bad request"
+        '500':
+          description: "Database error"
+
+  /images:
+    get:
+      tags:
+      - "images"
+      summary: "Returns all existing images"
+      produces:
+      - "application/json"
+      - "application/xml"
+      responses:
+        '200':
+          description: "successful operation"
+          schema:
+            $ref: '#/definitions/ImageArray'
+        '400':
+          description: "Bad request"
+        '500':
+          description: "Database error"
+
+    post:
+      tags:
+      - "images"
+      summary: "Creates a new image"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Image Object to be changed"
+        required: true
+        schema:
+          $ref: "#/definitions/Image"
+      responses:
+        '201':
+          description: "Created"
+        '400':
+          description: "Bad request"
+        '500':
+          description: "Database error"
+
+    put:
+      tags:
+        - "images"
+      summary: "Updates an existing image"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Image Object to be added"
+        required: true
+        schema:
+          $ref: "#/definitions/Image"
+      responses:
+        '200':
+          description: "successfully updated"
+        '400':
+          description: "Bad request"
+        '500':
+          description: "Database error"
+
+  /images/{iid}:
+    get:
+      tags:
+      - "images"
+      summary: "Gets a specific company"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "iid"
+        in: "path"
+        description: "ID od the Company to be returned"
+        required: true
+        type: "integer"
+      responses:
+        '200':
+          description: "successful operation"
+          schema:
+            $ref: '#/definitions/Image'
+        '400':
+          description: "Bad request"
+        '500':
+          description: "Database error"
+    
+    delete:
+      tags:
+        - "images"
+      summary: "Deletes a specific image"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "iid"
+        in: "path"
+        description: "ID of the image to be deleted"
+        required: true
+        type: "integer"
+      responses:
+        '204':
+          description: "successful operation"
+        '400':
+          description: "Bad request"
+        '500':
+          description: "Database error"
+
+definitions:
+  Company:
+    type: "object"
+    properties:
+      cid:
+        type: "integer"
+        example: 12
+      cname:
+        type: "string"
+        example: "GLS Srl"
+      caddress:
+        type: "string"
+        example: "Via xyz 123, Bolzano, 39100, IT"
+      ctelephone:
+        type: "string"
+        example: "+393333333333"
+      cmail:
+        type: "integer"
+        example: "mail@example.com"
+
+  Image:
+    type: "object"
+    properties:
+      iid:
+        type: "integer"
+        example: 12
+      iblob:
+        type: "string"
+        example: "base64 image code"
+      itimestamp:
+        type: "integer"
+        example: "1699688305"
+      ilat:
+        type: "number"
+        example: "45.89346"
+      ilong:
+        type: "number"
+        example: "89.96284"
+
+  CompanyArray:
+    type: "array"
+    items:
+      $ref: '#/definitions/Company'
+
+  ImageArray:
+    type: "array"
+    items:
+      $ref: '#/definitions/Image'
