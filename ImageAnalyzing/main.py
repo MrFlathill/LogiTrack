@@ -5,19 +5,19 @@ from openai import OpenAI
 
 # custom function for OpenAI GPT-4 preview api
 def chat(system, user_assistant):
-  assert isinstance(system, str), "`system` should be a string"
-  assert isinstance(user_assistant, list), "`user_assistant` should be a list"
-  system_msg = [{"role": "system", "content": system}]
-  user_assistant_msgs = [
-      {"role": "assistant", "content": user_assistant[i]} if i % 2 else {"role": "user", "content": user_assistant[i]}
-      for i in range(len(user_assistant))]
+    assert isinstance(system, str), "`system` should be a string"
+    assert isinstance(user_assistant, list), "`user_assistant` should be a list"
+    system_msg = [{"role": "system", "content": system}]
+    user_assistant_msgs = [
+        {"role": "assistant", "content": user_assistant[i]} if i % 2 else {"role": "user", "content": user_assistant[i]}
+        for i in range(len(user_assistant))]
 
-  msgs = system_msg + user_assistant_msgs
-  response = aiclient.chat.completions.create(model="gpt-4-1106-preview",messages=msgs)
-  print(response)
-  status_code = response.choices[0].finish_reason
-  assert status_code == "stop", f"The status code was {status_code}."
-  return response.choices[0].message.content
+    msgs = system_msg + user_assistant_msgs
+    response = aiclient.chat.completions.create(model="gpt-4-1106-preview",messages=msgs)
+    print(response)
+    status_code = response.choices[0].finish_reason
+    assert status_code == "stop", f"The status code was {status_code}."
+    return response.choices[0].message.content
 
 # custom function for AWS reckognition image to text API
 def detect_text(image_path):
@@ -59,7 +59,7 @@ def detect_address(text):
     pattern_match_re = r'\d{1,5}\s\w.\s(\b\w*\b\s){1,2}\w*\.'
     matches = re.findall("(" + pattern_match_re + ")", text, re.IGNORECASE)
     for match in matches:
-        print(match)
+        #print(match)
         for m in match:
             if len(m) > 0:
                     return m
@@ -141,7 +141,7 @@ def detect_company(text):
 # Proof of value
 
 # OpenAI init
-aiclient = OpenAI(api_key="")
+aiclient = OpenAI(api_key="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")
 confidence_level = 95
 
 #AWS Rekognition init
@@ -149,9 +149,8 @@ session = boto3.Session(profile_name='default')
 client = session.client('rekognition')
 
 # image loading from filesystem. TODO mysql integration
-image_name="0WO0N000002iqmNWAQ_4896857.png"
-image_name="italtrans_esselunga_volvo_camion_elettrico.jpg"
-image_path = "/tmp/"+image_name
+image_name="image7.jpg"
+image_path = "/opt/pictures/"+image_name
 
 # image processing and label extraction through AWS Rekognition
 # and custom regex
@@ -169,14 +168,16 @@ for label in labels:
         metadata.phone += res
     if (res := detect_address(label)) is not None:
         metadata.address = res
-if hasattr(metadata, "manufacturer"): print(metadata.manufacturer)
-if hasattr(metadata, "company"): print(metadata.company)
-if hasattr(metadata, "email"): print(metadata.email)
-if hasattr(metadata, "phone"): print(metadata.phone)
-if hasattr(metadata, "address"): print(metadata.address)
+#if hasattr(metadata, "manufacturer"): print(metadata.manufacturer)
+#if hasattr(metadata, "company"): print(metadata.company)
+#if hasattr(metadata, "email"): print(metadata.email)
+#if hasattr(metadata, "phone"): print(metadata.phone)
+#if hasattr(metadata, "address"): print(metadata.address)
 
 # prompt init for OpenAI data enrichment
-pormpt = f"""
+print(labels)
+print("")
+prompt = f"""
 Le informazioni di seguito sono state estratte da una immagine di un camion:  \"{labels}\".
 Identifica l'azienda di appartenenza del camion piu probabile, dammi solo un risultato.
 Restituisci anche informazioni riguardanti:
@@ -192,7 +193,8 @@ Il formato della risposta deve essere json, con solo le risposte alle mie domand
     "email": "inserisci qui la email di contatto"
 }}
 """
-response = chat("You are a sales specialist.", [pormpt])
+print(prompt)
+response = chat("You are a sales specialist.", [prompt])
 
 # results display. TODO mysql integration
 print(response)
