@@ -2,6 +2,7 @@ import boto3
 import re
 import phonenumbers
 from openai import OpenAI
+from dotenv import dotenv_values
 
 # custom function for OpenAI GPT-4 preview api
 def chat(system, user_assistant):
@@ -140,8 +141,10 @@ def detect_company(text):
 
 # Proof of value
 
+env = dotenv_values(".env")
+
 # OpenAI init
-aiclient = OpenAI(api_key="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")
+aiclient = OpenAI(api_key=env["OPENAI_API_KEY"])
 confidence_level = 95
 
 #AWS Rekognition init
@@ -149,8 +152,8 @@ session = boto3.Session(profile_name='default')
 client = session.client('rekognition')
 
 # image loading from filesystem. TODO mysql integration
-image_name="image7.jpg"
-image_path = "/opt/pictures/"+image_name
+image_name= env["PICTURE"]
+image_path = env["PICTURE_PATH"]
 
 # image processing and label extraction through AWS Rekognition
 # and custom regex

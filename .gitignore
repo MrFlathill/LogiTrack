@@ -1,2 +1,4 @@
 # Node
 /API/node_modules
+/ImageAnalyzing/.env
+.env
